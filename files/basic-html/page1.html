@@ -2,7 +2,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="description" content="${meta.description}">
         <meta name="keywords" content="${meta.keywords}">
-        <title>Page 1 - Demo</title>
+        <title>${meta.title}</title>
 <style type="text/css">
 body {
 	margin-left: 0px;
@@ -116,7 +116,7 @@ function MM_swapImage() { //v3.0
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><a href="page25.html"><img src="images/previous_big.png" width="90" height="80" /></a></p>
+  <p><a href="${body.preURL}"><img src="images/previous_big.png" width="90" height="80" /></a></p>
 </div>
 <div id="middle">
   <div id="top-title"><span class="font1">Basic HTML Version</span>
@@ -127,26 +127,23 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="${body.tocURL}">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=1">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="${body.fullVersionURL}">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1 - Demo</div>
-        <div id="content-top2">P. 1</div>
+        <div id="content-top1">${body.title}</div>
+        <div id="content-top2">P. ${body.currentIndex}</div>
      </div>
      <div id="content-middle">
       <div class="text-container">
           <div class="use-as-video cc-float-fix">
-            <a style="text-decoration: none;" href="../../index.html#p=1"><img src="../thumb/1.jpg" /></a>
+            <a style="text-decoration: none;" href="${body.fullVersionURLPage}"><img src="${body.thumbURL}" /></a>
           </div>
           <p class="use-as-video-title"></p>
-          <pre style="word-break:break-all;"><code><p class="use-as-video-title"></p>
-                                <pre style="white-space:pre-line"><code>
-                                    PORTIF%u00d3LIO 
-                                </code></pre></code></pre>
+          <pre style="word-break:break-all;"><code>${body.pageText}</code></pre>
      	</div>
     
      </div>
@@ -154,11 +151,11 @@ function MM_swapImage() { //v3.0
        <div id="content-bottom2">
          <table width="110" border="0" cellspacing="0" cellpadding="0">
            <tr>
-             <td width="22%" height="44"><a href="page25.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+             <td width="22%" height="44"><a href="${body.preURL}"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page1.html">1</a>&nbsp;&nbsp;&nbsp;<a href="page2.html">2</a>&nbsp;&nbsp;&nbsp;<a href="page3.html">3</a>&nbsp;&nbsp;&nbsp;<a href="page4.html">4</a>&nbsp;&nbsp;&nbsp;<a href="page5.html">5</a>&nbsp;&nbsp;&nbsp;<a href="page6.html">6</a>&nbsp;&nbsp;&nbsp;<a href="page7.html">7</a>&nbsp;&nbsp;&nbsp;<a href="page8.html">8</a>&nbsp;&nbsp;&nbsp;<a href="page9.html">9</a>&nbsp;&nbsp;&nbsp;<a href="page10.html">10</a>
+             	${body.pageNumbers}
              </td>
-             <td width="35%"><a href="page2.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+             <td width="35%"><a href="${body.nextURL}"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>
          </table>
        </div>
@@ -171,7 +168,7 @@ function MM_swapImage() { //v3.0
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><a href="page2.html"><img src="images/next_big.png" width="90" height="80" /></a></p>
+  <p><a href="${body.nextURL}"><img src="images/next_big.png" width="90" height="80" /></a></p>
 </div>
 
 
